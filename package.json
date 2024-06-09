@@ -2,6 +2,7 @@
   "name": "create-vite-bootstrapper",
   "version": "1.0.0",
   "main": "src/index.js",
+  "private": false,
   "bin": {
     "create-vite-react-tw": "./bin/create.js"
   },
@@ -37,5 +38,9 @@
     "@eslint/js": "^9.4.0",
     "eslint": "^9.4.0",
     "globals": "^15.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenSimmers/create-vite-bootstrapper.git"
+  },
 }
