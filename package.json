@@ -42,5 +42,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BenSimmers/create-vite-bootstrapper.git"
-  },
+  }
 }
