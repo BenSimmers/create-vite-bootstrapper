@@ -8,6 +8,7 @@
   "scripts": {
     "start": "node src/index.js",
     "release": "changeset version && changeset publish",
+    "lint": "eslint . --ext .js,.ts,.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -19,8 +20,18 @@
     "fs-extra": "^11.2.0",
     "inquirer": "^8.1.2"
   },
-  "keywords": ["react", "vite", "typescript", "tailwindcss"],
+  "keywords": [
+    "react",
+    "vite",
+    "typescript",
+    "tailwindcss"
+  ],
   "author": "Ben Simmers",
   "license": "ISC",
-  "description": "Bootstrapping command for a react app"
+  "description": "Bootstrapping command for a react app",
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "eslint": "^9.4.0",
+    "globals": "^15.4.0"
+  }
 }
