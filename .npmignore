@@ -3,3 +3,5 @@
 .eslint.config.mjs
 .gitignore
 .changeset
+example.jpeg
+CHANGELOG.md

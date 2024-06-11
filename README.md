@@ -21,3 +21,8 @@ This is a companion command for the template repository [TypeScript-Vite-React](
 - This is also import as when you make a PR the changeset will be added to the PR and the version will be updated automatically.
 - To create a changeset run `yarn changeset` or `npx changeset` and follow the prompts.
 
+
+
+## Example
+<!-- add image -->
+![something](example.jpeg)
