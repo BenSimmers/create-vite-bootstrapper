@@ -1,12 +1,11 @@
 {
   "name": "create-vite-bootstrapper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "src/index.js",
   "private": false,
   "publishConfig": {
     "access": "public"
   },
-
   "bin": {
     "create-vite-react-tw": "./bin/create.js"
   },
@@ -26,7 +25,12 @@
     "fs-extra": "^11.2.0",
     "inquirer": "^8.1.2"
   },
-  "keywords": ["react", "vite", "typescript", "tailwindcss"],
+  "keywords": [
+    "react",
+    "vite",
+    "typescript",
+    "tailwindcss"
+  ],
   "author": "Ben Simmers",
   "license": "ISC",
   "description": "Bootstrapping command for a react app",
