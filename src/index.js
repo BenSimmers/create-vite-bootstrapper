@@ -52,15 +52,15 @@ async function BootstrapApp(projectDirectory) {
   );
   console.log("\nInside that directory, you can run several commands:");
 
-  console.log(chalk.cyan(`  npm start`));
-  console.log("    Starts the development server.");
+  console.log(chalk.cyan(`  npm run dev`));
+  console.log(" Starts the development server.");
 
   console.log(chalk.cyan(`  npm run build`));
-  console.log("    Bundles the app into static files for production.");
+  console.log(" Bundles the app into static files for production.");
 
   console.log("\nWe suggest that you begin by typing:");
   console.log(chalk.cyan(`  cd ${projectDirectory}`));
-  console.log(chalk.cyan("  npm start"));
+  console.log(chalk.cyan("  npm run dev"));
 }
 
 module.exports = BootstrapApp;
