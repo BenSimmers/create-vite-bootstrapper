@@ -1,5 +1,11 @@
 # create-vite-bootstrapper
 
+## 1.1.2
+
+### Patch Changes
+
+- 1b30fa5: update docs add image and update npmignore
+
 ## 1.1.1
 
 ### Patch Changes
