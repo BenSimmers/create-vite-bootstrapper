@@ -1,12 +1,13 @@
 # create-vite-bootstrapper
 
 This is a simple script to create a vite project with the following features:
-- TypeScript
-- ESLint
-- Prettier
-- TailwindCSS
-- PostCSS
-
+- TypeScript for type safety and modern JavaScript features
+- ESLint for linting
+- Prettier for code formatting
+- TailwindCSS for styling
+- PostCSS for processing CSS
+- Zustand for state management
+- React Router for routing
 ## Usage
 
 ```bash
