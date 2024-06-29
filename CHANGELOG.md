@@ -1,5 +1,11 @@
 # create-vite-bootstrapper
 
+## 1.2.0
+
+### Minor Changes
+
+- 7cb813f: Add Zustand notes and code cleanup
+
 ## 1.1.2
 
 ### Patch Changes
