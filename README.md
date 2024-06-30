@@ -8,6 +8,8 @@ This is a simple script to create a vite project with the following features:
 - PostCSS for processing CSS
 - Zustand for state management
 - React Router for routing
+- vitest for testing components
+- makefile for running common tasks
 ## Usage
 
 ```bash
