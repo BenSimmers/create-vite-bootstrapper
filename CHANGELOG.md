@@ -1,5 +1,11 @@
 # create-vite-bootstrapper
 
+## 1.2.1
+
+### Patch Changes
+
+- 98e3c2f: fix package.json versioning and add vitest
+
 ## 1.2.0
 
 ### Minor Changes
