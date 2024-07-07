@@ -9,6 +9,8 @@ This is a simple script to create a vite project with the following features:
 - Zustand for state management
 - React Router for routing
 - vitest for testing components
+- nginx for serving the app
+- Docker for containerizing the app
 - makefile for running common tasks
 ## Usage
 
