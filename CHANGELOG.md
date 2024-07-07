@@ -1,5 +1,11 @@
 # create-vite-bootstrapper
 
+## 1.2.2
+
+### Patch Changes
+
+- f9a4c74: add nginx and docker
+
 ## 1.2.1
 
 ### Patch Changes
