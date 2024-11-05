@@ -1,5 +1,11 @@
 # create-vite-bootstrapper
 
+## 2.0.0
+
+### Major Changes
+
+- 4601e9c: add support for bun-api-base to choose for template options
+
 ## 1.2.2
 
 ### Patch Changes
