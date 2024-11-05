@@ -1,10 +1,32 @@
 const execa = require("execa");
 const chalk = require("chalk");
+const inquirer = require("inquirer");
 const REPOURL = require("./constants").REPOURL;
+const APIURL = require("./constants").APIURL;
 
 async function tui(projectPath, projectName, projectDirectory) {
-  console.log(chalk.green("\nCloning the repository..."));
-  await execa("git", ["clone", REPOURL, projectPath]);
+  // console.log(chalk.green("\nCloning the repository..."));
+  // await execa("git", ["clone", REPOURL, projectPath]);
+
+  console.log(chalk.green("Choose what template you want to use:"));
+  const { template } = await inquirer.prompt([
+    {
+      type: "list",
+      name: "template",
+      message: "Choose a template for either front-end or back-end development:",
+      choices: ["React TS Vite Tailwind Front-end", "Bun TS Backend API"],
+    },
+  ]);
+
+  if (template === "React TS Vite") {
+    console.log(chalk.green("\nCloning the repository..."));
+    await execa("git", ["clone", REPOURL, projectPath]);
+  }
+
+  if (template === "Bun Backend API") {
+    console.log(chalk.green("\nCloning the repository..."));
+    await execa("git", ["clone", APIURL, projectPath]);
+  }
 
   process.chdir(projectPath);
 

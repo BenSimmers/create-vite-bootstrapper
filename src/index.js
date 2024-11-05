@@ -4,8 +4,6 @@ const inquirer = require("inquirer");
 const chalk = require("chalk");
 
 const tui = require("./tui");
-const REPOURL = require("./constants").REPOURL;
-
 
 /**
  * @param {string} projectDirectory
@@ -20,12 +18,12 @@ async function BootstrapApp(projectDirectory) {
     ),
   );
   console.log(chalk.green("Press ^C at any time to quit."));
-  console.log(chalk.yellow(`To view the template, visit: ${REPOURL}\n`));
 
   if (fs.existsSync(projectPath)) {
     console.error(chalk.red(`Error: Directory ${projectPath} already exists.`));
     process.exit(1);
   }
+
 
   const { projectName } = await inquirer.prompt([
     {
