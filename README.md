@@ -26,6 +26,13 @@ If you want to create a backend project with the following features, you can cho
 - cors for cross-origin requests
 
 
+If you want to create a typescript project or library you can use the typescript template with the following features:
+- TypeScript for type safety and modern JavaScript features
+- ESLint for linting
+- Jest for testing
+- Bun a new javascript runtime
+- changesets for versioning
+
 ## Usage
 
 ```bash

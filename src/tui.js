@@ -3,6 +3,7 @@ const chalk = require("chalk");
 const inquirer = require("inquirer");
 const REPOURL = require("./constants").REPOURL;
 const APIURL = require("./constants").APIURL;
+const LIBURL = require("./constants").LIBURL;
 
 async function tui(projectPath, projectName, projectDirectory) {
   // console.log(chalk.green("\nCloning the repository..."));
@@ -14,18 +15,26 @@ async function tui(projectPath, projectName, projectDirectory) {
       type: "list",
       name: "template",
       message: "Choose a template for either front-end or back-end development:",
-      choices: ["React TS Vite Tailwind Front-end", "Bun TS Backend API"],
+      choices: ["React TS Vite Tailwind Front-end", "Bun TS Backend API", "TypeScript Library/Project Template"],
     },
   ]);
 
-  if (template === "React TS Vite") {
-    console.log(chalk.green("\nCloning the repository..."));
-    await execa("git", ["clone", REPOURL, projectPath]);
-  }
-
-  if (template === "Bun Backend API") {
-    console.log(chalk.green("\nCloning the repository..."));
-    await execa("git", ["clone", APIURL, projectPath]);
+  switch (template) {
+    case "React TS Vite Tailwind Front-end":
+      console.log(chalk.green("\nCloning the repository..."));
+      await execa("git", ["clone", REPOURL, projectPath]);
+      break;
+    case "Bun TS Backend API":
+      console.log(chalk.green("\nCloning the repository..."));
+      await execa("git", ["clone", APIURL, projectPath]);
+      break;
+    case "TypeScript Library/Project Template":
+      console.log(chalk.green("\nCloning the repository..."));
+      await execa("git", ["clone", LIBURL, projectPath]);
+      break;
+    default:
+      console.log(chalk.red("Error: No template selected."));
+      process.exit(1);
   }
 
   process.chdir(projectPath);
@@ -42,7 +51,7 @@ async function tui(projectPath, projectName, projectDirectory) {
   );
   console.log("\nInside that directory, you can run several commands:");
 
-  console.log(chalk.cyan(`  npm run dev`));
+  console.log(chalk.cyan(`Check the makefile or package.json for more commands.`));
   console.log(" Starts the development server.");
 
   console.log(chalk.cyan(`  npm run build`));
@@ -50,7 +59,6 @@ async function tui(projectPath, projectName, projectDirectory) {
 
   console.log("\nWe suggest that you begin by typing:");
   console.log(chalk.cyan(`  cd ${projectDirectory}`));
-  console.log(chalk.cyan("  npm run dev"));
 }
 
 module.exports = tui;

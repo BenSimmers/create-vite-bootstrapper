@@ -14,7 +14,7 @@ async function BootstrapApp(projectDirectory) {
   console.clear();
   console.log(
     chalk.blue(
-      "Welcome to the React TypeScript Vite Tailwind CSS Bootstrapper!\n",
+      "Welcome\n",
     ),
   );
   console.log(chalk.green("Press ^C at any time to quit."));
