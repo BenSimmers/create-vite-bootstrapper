@@ -1,5 +1,11 @@
 # create-vite-bootstrapper
 
+## 2.1.0
+
+### Minor Changes
+
+- 191ffbb: add typescript template to project choices
+
 ## 2.0.0
 
 ### Major Changes
