@@ -1,5 +1,11 @@
 # create-vite-bootstrapper
 
+## 2.1.1
+
+### Patch Changes
+
+- 25c63ac: add redux template option
+
 ## 2.1.0
 
 ### Minor Changes
